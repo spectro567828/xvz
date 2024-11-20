@@ -1,0 +1,57 @@
+/* General Reset and Centering */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;  /* Dark background for contrast */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+}
+
+/* Logo styling */
+.logo {
+    width: 150px;  /* Adjust as necessary */
+    height: 150px;
+    animation: rotateLogo 4s linear infinite;  /* Rotate logo */
+    transition: transform 0.1s ease;  /* Smooth transform for interactivity */
+    margin-bottom: 20px;
+}
+
+/* Rotate animation for logo */
+@keyframes rotateLogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styling for the site name */
+.site-name {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 600px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .site-name {
+        font-size: 1.5rem;
+    }
+}
